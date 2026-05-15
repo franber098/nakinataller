@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAKINA | Taller de Carpintería de Autor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cursor-follower"></div>
+    <div id="cursor-main"></div>
+
+    <div id="smooth-wrapper">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="index.html"><img src="logotaller.png" alt="Nakina Logo" class="side-logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="refugio.html" class="nav-link">Refugio</a></li>
+                    <li><a href="inscripciones.html" class="nav-link">Inscripciones</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="hero-full">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">NAKINA</h1>
+                <p class="hero-slogan animate-fade-in">Un refugio donde habita la paciencia y el tallado de la madera</p>
+                <a href="inscripciones.html" class="hero-cta animate-fade-in">Vení a disfrutar de nuestro refugio</a>
+            </div>
+        </header>
+
+        <section class="invitation-section">
+            <div class="invitation-text">
+                <p>Vení al Refugio y <span>desconectate</span> de lo digital.</p>
+            </div>
+            <div class="invitation-image">
+                <img src="provisoria.jpg" alt="Calma en el Taller">
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-form" id="contact-section">
+                    <h3 class="animate-fade-in">CONTACTO</h3>
+                    <form id="footer-unlock-form" class="luxury-form">
+                        <input type="text" placeholder="NOMBRE COMPLETO" required>
+                        <input type="number" placeholder="EDAD" required>
+                        <input type="email" placeholder="GMAIL" required>
+                        <textarea placeholder="Mensaje (opcional): ¿Querés preguntarle algo al taller?"
+                            rows="3"></textarea>
+                        <button type="submit" class="btn-footer">ENVIAR</button>
+                    </form>
+                    <div id="form-success-msg"
+                        style="display: none; margin-top: 2rem; color: var(--sage-green-light); font-weight: 700;">
+                        ¡Muchas gracias por contactarte! Pronto te estaremos mandando los detalles.
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <img src="logotaller.png" alt="Nakina" class="footer-logo-small">
+                </div>
+                <div class="footer-center">
+                    <p class="footer-copyright">© 2026 NAKINA TALLER. DISEÑO SENSORIAL</p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://wa.me/5491100000000" target="_blank">
+                        <img src="logowsp.png" alt="WhatsApp" class="footer-social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/viva.nakina/" target="_blank">
+                        <img src="logoig.png" alt="Instagram" class="footer-social-icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
