@@ -74,25 +74,23 @@
             <div class="footer-content">
                 <div class="footer-form" id="contact-section">
                     <h3>COMPLETA EL FORMULARIO Y SE PARTE DEL REFUGIO</h3>
-                    <form id="footer-unlock-form" class="luxury-form">
-                        <input type="text" placeholder="NOMBRE COMPLETO" required>
-
-<!-- El patrón exige obligatoriamente el signo + seguido de 7 a 15 números -->
-<label for="celular"></label>
-<!-- El patrón exige obligatoriamente el signo + seguido de 7 a 15 números -->
-<input 
-    type="tel" 
-    id="celular" 
-    name="celular" 
-    placeholder="Ej: +5491100000000" 
-    pattern="\+[0-9]{7,15}" 
-    title="Por favor, ingresa el código de país seguido del número (Ej: +54911...)" 
-    required
-><form id="footer-unlock-form" class="luxury-form">
+    <form id="footer-unlock-form" class="luxury-form">
     <input type="text" placeholder="NOMBRE COMPLETO" required>
-
+    <input type="number" placeholder="EDAD" required>
     
-  <button type="submit" class="btn-footer">ENVIAR</button>
+    <label for="celular">Número de Celular:</label>
+    <input 
+        type="tel" 
+        id="celular" 
+        name="celular" 
+        placeholder="Ej: +5491100000000" 
+        pattern="\+[0-9]{7,15}" 
+        title="Por favor, ingresa el código de país seguido del número (Ej: +54911...)" 
+        required 
+    >
+    
+    <!-- El botón y el cierre del formulario que faltaban: -->
+    <button type="submit" class="btn-footer">ENVIAR</button>
 </form>
                     
                     <div id="form-success-msg" style="display: none; margin-top: 2rem; color: var(--sage-green-light); font-weight: 700;">
