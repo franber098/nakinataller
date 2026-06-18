@@ -53,6 +53,17 @@
                     <form id="footer-unlock-form" class="luxury-form">
                         <input type="text" placeholder="NOMBRE COMPLETO" required>
                         <input type="number" placeholder="EDAD" required>
+                        <label for="celular">Número de Celular:</label>
+<!-- El patrón exige obligatoriamente el signo + seguido de 7 a 15 números -->
+<input 
+    type="tel" 
+    id="celular" 
+    name="celular" 
+    placeholder="Ej: +5491100000000" 
+    pattern="\+[0-9]{7,15}" 
+    title="Por favor, ingresa el código de país seguido del número (Ej: +54911...)" 
+    required
+>
                         <input type="email" placeholder="GMAIL" required>
                         <textarea placeholder="Mensaje (opcional): ¿Querés preguntarle algo al taller?"
                             rows="3"></textarea>
@@ -72,9 +83,7 @@
                     <p class="footer-copyright">© 2026 NAKINA TALLER. DISEÑO SENSORIAL</p>
                 </div>
                 <div class="footer-right">
-                    <a href="https://wa.me/5491100000000" target="_blank">
-                        <img src="logowsp.png" alt="WhatsApp" class="footer-social-icon">
-                    </a>
+                
                     <a href="https://www.instagram.com/viva.nakina/" target="_blank">
                         <img src="logoig.png" alt="Instagram" class="footer-social-icon">
                     </a>
