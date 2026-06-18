@@ -50,25 +50,24 @@
             <div class="footer-content">
                 <div class="footer-form" id="contact-section">
                     <h3 class="animate-fade-in">CONTACTO</h3>
-                    <form id="footer-unlock-form" class="luxury-form">
-                        <input type="text" placeholder="NOMBRE COMPLETO" required>
-                        <input type="number" placeholder="EDAD" required>
-                         <label for="celular"></label>
-<!-- El patrón exige obligatoriamente el signo + seguido de 7 a 15 números -->
-<input 
-    type="tel" 
-    id="celular" 
-    name="celular" 
-    placeholder="Ej: +5491100000000" 
-    pattern="\+[0-9]{7,15}" 
-    title="Por favor, ingresa el código de país seguido del número (Ej: +54911...)" 
-    required
->
-                        <input type="email" placeholder="GMAIL" required>
-                        <textarea placeholder="Mensaje (opcional): ¿Querés preguntarle algo al taller?"
-                            rows="3"></textarea>
-                        <button type="submit" class="btn-footer">ENVIAR</button>
-                    </form>
+<form id="footer-unlock-form" class="luxury-form">
+    <input type="text" placeholder="NOMBRE COMPLETO" required>
+    <input type="number" placeholder="EDAD" required>
+    
+    <label for="celular">Número de Celular:</label>
+    <input 
+        type="tel" 
+        id="celular" 
+        name="celular" 
+        placeholder="Ej: +5491100000000" 
+        pattern="\+[0-9]{7,15}" 
+        title="Por favor, ingresa el código de país seguido del número (Ej: +54911...)" 
+        required 
+    >
+    
+    <!-- El botón y el cierre del formulario que faltaban: -->
+    <button type="submit" class="btn-footer">ENVIAR</button>
+</form>
                     <div id="form-success-msg"
                         style="display: none; margin-top: 2rem; color: var(--sage-green-light); font-weight: 700;">
                         ¡Muchas gracias por contactarte! Pronto te estaremos mandando los detalles.
